@@ -189,12 +189,42 @@
 			<version>67.1</version>
 		</dependency>
 		<!-- flute -->
+		<dependency>
+			<groupId>org.milyn</groupId>
+			<artifactId>flute</artifactId>
+			<version>1.3</version>
+		</dependency>
 		<!-- jakarta.annotation-api -->
+		<dependency>
+			<groupId>jakarta.annotation</groupId>
+			<artifactId>jakarta.annotation-api</artifactId>
+			<version>2.1.1</version>
+		</dependency>
 		<!-- javax.activation -->
+		<dependency>
+			<groupId>org.eclipse.jetty.orbit</groupId>
+			<artifactId>javax.activation</artifactId>
+			<version>1.1.0.v201105071233</version>
+		</dependency>
 		<!-- javax.wsdl -->
+		<dependency>
+			<groupId>javax.wsdl</groupId>
+			<artifactId>javax.wsdl</artifactId>
+			<version>1.4.0.v200706111329</version>
+		</dependency>
 		<!-- javax.xml.bind -->
 		<!-- javax.xml.stream -->
+		<dependency>
+			<groupId>org.eclipse.birt.runtime</groupId>
+			<artifactId>javax.xml.stream</artifactId>
+			<version>1.0.1.v201004272200</version>
+		</dependency>
 		<!-- javax.xml -->
+		<dependency>
+			<groupId>org.eclipse.birt.runtime</groupId>
+			<artifactId>javax.xml</artifactId>
+			<version>1.3.4.v201005080400</version>
+		</dependency>
 		<!-- net.sourceforge.lpg.lpgjavaruntime -->
 		<dependency>
 			<groupId>org.apache.xmlgraphics</groupId>
@@ -393,24 +423,6 @@
 			<version>2.7.2</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.orbit.bundles</groupId>
-			<artifactId>org.apache.xerces</artifactId>
-			<version>2.12.1</version>
-			<systemPath>${runtime.dir}/org.apache.xerces_2.12.1.v20210115-0812.jar</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.orbit.bundles</groupId>
-			<artifactId>org.apache.xml.resolver</artifactId>
-			<version>1.2.0</version>
-			<systemPath>${runtime.dir}/org.apache.xml.resolver_1.2.0.v201005080400.jar</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.orbit.bundles</groupId>
-			<artifactId>org.apache.xml.serializer</artifactId>
-			<version>2.7.1</version>
-			<systemPath>${runtime.dir}/org.apache.xml.serializer_2.7.1.v201005080400.jar</systemPath>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
 			<version>3.1.0</version>
@@ -421,16 +433,14 @@
 			<version>2.6</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.orbit.bundles</groupId>
-			<artifactId>org.bouncycastle.bcpg</artifactId>
-			<version>1.70.0</version>
-			<systemPath>${runtime.dir}/org.bouncycastle.bcpg_1.70.0.v20220105-1522.jar</systemPath>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcpg-jdk15on</artifactId>
+		    <version>1.70</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.orbit.bundles</groupId>
-			<artifactId>org.bouncycastle.bcprov</artifactId>
-			<version>1.70.0</version>
-			<systemPath>${runtime.dir}/org.bouncycastle.bcprov_1.70.0.v20220105-1522.jar</systemPath>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcprov-jdk15on</artifactId>
+		    <version>1.70</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.platform</groupId>
@@ -497,78 +507,6 @@
 					<artifactId>*</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.apache.derby.dbdefinition</artifactId>
-			<version>${version.datatools}</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.apache.derby.dbdefinition_${version.datatools}${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.apache.derby</artifactId>
-			<version>${version.datatools}</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.apache.derby_${version.datatools}${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.console.profile</artifactId>
-			<version>${version.datatools}</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.console.profile_${version.datatools}${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.db.generic</artifactId>
-			<version>${version.datatools}</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.db.generic_${version.datatools}${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.dbdefinition.genericJDBC</artifactId>
-			<version>${version.datatools}</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_${version.datatools}${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda.consumer</artifactId>
-			<version>3.4.101</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.oda.consumer_3.4.101${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda.design</artifactId>
-			<version>3.5.101</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.oda.design_3.5.101${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda.flatfile</artifactId>
-			<version>3.3.101</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.oda.flatfile_3.3.101${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda.profile</artifactId>
-			<version>3.4.101</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.oda.profile_3.4.101${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda</artifactId>
-			<version>3.6.101</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.oda_3.6.101${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.sqm.core</artifactId>
-			<version>1.4.101</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity.sqm.core_1.4.101${postfix.datatools}</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
-			<artifactId>org.eclipse.datatools.connectivity</artifactId>
-			<version>1.14.102</version>
-			<systemPath>${runtime.dir}/org.eclipse.datatools.connectivity_1.14.102.201911250848.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -784,12 +722,48 @@
 			<version>1.7.5.v201504281450</version>
 		</dependency>
 		<!-- org.sat4j.core -->
+		<dependency>
+    		<groupId>org.eclipse</groupId>
+    		<artifactId>org.sat4j.core</artifactId>
+    		<version>2.3.5.v201308161310</version>
+		</dependency>
 		<!-- org.sat4j.pb -->
+		<dependency>
+    		<groupId>org.eclipse</groupId>
+    		<artifactId>org.sat4j.pb</artifactId>
+    		<version>2.3.5.v201308161310</version>
+		</dependency>
 		<!-- org.tukaani.xz -->
+		<dependency>
+    		<groupId>at.bestsolution.efxclipse.eclipse</groupId>
+    		<artifactId>org.tukaani.xz</artifactId>
+    		<version>1.8.0.v20180207-1613</version>
+		</dependency>
 		<!--  org.w3c.css.sac -->
+		<dependency>
+    		<groupId>org.eclipse.birt.runtime</groupId>
+    		<artifactId>org.w3c.css.sac</artifactId>
+    		<version>1.3.1.v200903091627</version>
+		</dependency>
 		<!-- org.w3c.dom.events -->
+		<dependency>
+    		<groupId>org.eclipse.birt.runtime</groupId>
+    		<artifactId>org.w3c.dom.events</artifactId>
+    		<version>3.0.0.draft20060413_v201105210656</version>
+		</dependency>
 		<!-- org.w3c.dom.smil -->
+		<dependency>
+		    <groupId>org.w3c.dom</groupId>
+		    <artifactId>org.w3c.dom.smil</artifactId>
+		    <version>1.0.1.v200903091627</version>
+		</dependency>
+
 		<!-- org.w3c.dom.svg -->
+		<dependency>
+		    <groupId>org.w3c.dom</groupId>
+		    <artifactId>org.w3c.dom.svg</artifactId>
+		    <version>1.1.0.v201011041433</version>
+		</dependency>
 
 		<!-- probably also needed -->
 		<dependency>
@@ -797,21 +771,6 @@
 			<artifactId>xml-apis</artifactId>
 			<version>1.4.01</version>
 		</dependency>
-		<dependency>
-			<groupId>com.lowagie</groupId>
-			<artifactId>itext</artifactId>
-			<version>1.3</version>
-		</dependency>
-
-
-
-
-
-
-
-
-
-
 	</dependencies>
 	<build>
 			<plugins>
