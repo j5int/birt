@@ -22,7 +22,7 @@
 		<relativePath>..</relativePath>
 	</parent>
 	<groupId>org.eclipse.birt</groupId>
-	<artifactId>birt-runtime</artifactId>
+	<artifactId>birt-runtime-maven</artifactId>
 	<packaging>jar</packaging>
 	<properties>
 		<version.org.apache.batik>1.14</version.org.apache.batik>
@@ -208,10 +208,11 @@
 		</dependency>
 		<!-- javax.wsdl -->
 		<dependency>
-			<groupId>javax.wsdl</groupId>
-			<artifactId>javax.wsdl</artifactId>
-			<version>1.4.0.v200706111329</version>
+		    <groupId>org.eclipse.birt.runtime.3_7_1</groupId>
+		    <artifactId>javax.wsdl</artifactId>
+		    <version>1.5.1</version>
 		</dependency>
+
 		<!-- javax.xml.bind -->
 		<!-- javax.xml.stream -->
 		<dependency>
@@ -652,28 +653,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.platform</groupId>
-			<artifactId>org.eclipse.jetty.servlet-api</artifactId>
-			<version>4.0.6</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>*</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.platform</groupId>
-			<artifactId>org.eclipse.orbit.mongodb</artifactId>
-			<version>3.2.2</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>*</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.platform</groupId>
 			<artifactId>org.eclipse.osgi.services</artifactId>
 			<version>3.10.200</version>
 			<exclusions>
@@ -723,21 +702,15 @@
 		</dependency>
 		<!-- org.sat4j.core -->
 		<dependency>
-    		<groupId>org.eclipse</groupId>
-    		<artifactId>org.sat4j.core</artifactId>
-    		<version>2.3.5.v201308161310</version>
+		    <groupId>org.sat4j</groupId>
+		    <artifactId>org.sat4j.core</artifactId>
+		    <version>2.3.1</version>
 		</dependency>
 		<!-- org.sat4j.pb -->
 		<dependency>
-    		<groupId>org.eclipse</groupId>
-    		<artifactId>org.sat4j.pb</artifactId>
-    		<version>2.3.5.v201308161310</version>
-		</dependency>
-		<!-- org.tukaani.xz -->
-		<dependency>
-    		<groupId>at.bestsolution.efxclipse.eclipse</groupId>
-    		<artifactId>org.tukaani.xz</artifactId>
-    		<version>1.8.0.v20180207-1613</version>
+		    <groupId>org.sat4j</groupId>
+		    <artifactId>org.sat4j.pb</artifactId>
+		    <version>2.3.1</version>
 		</dependency>
 		<!--  org.w3c.css.sac -->
 		<dependency>
@@ -753,18 +726,16 @@
 		</dependency>
 		<!-- org.w3c.dom.smil -->
 		<dependency>
-		    <groupId>org.w3c.dom</groupId>
+    		<groupId>org.eclipse.birt.runtime.3_7_1</groupId>
 		    <artifactId>org.w3c.dom.smil</artifactId>
-		    <version>1.0.1.v200903091627</version>
+		    <version>1.0.0</version>
 		</dependency>
-
 		<!-- org.w3c.dom.svg -->
 		<dependency>
-		    <groupId>org.w3c.dom</groupId>
+		    <groupId>org.eclipse.birt.runtime.3_7_1</groupId>
 		    <artifactId>org.w3c.dom.svg</artifactId>
-		    <version>1.1.0.v201011041433</version>
+		    <version>1.1.0</version>
 		</dependency>
-
 		<!-- probably also needed -->
 		<dependency>
 			<groupId>xml-apis</groupId>
