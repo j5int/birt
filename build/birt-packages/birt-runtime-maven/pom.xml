@@ -184,11 +184,6 @@
 		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.eclipse.datatools</groupId>
-		    <artifactId>org.eclipse.datatools.sqltools.parsers.sql.query</artifactId>
-		    <version>1.0.1-20081006</version>
-		</dependency>
-		<dependency>
 			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.sqltools.parsers.sql</artifactId>
 		    <version>1.1.0.201603142002</version>
