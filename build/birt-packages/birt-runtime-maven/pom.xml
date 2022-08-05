@@ -36,146 +36,173 @@
 			<artifactId>org.eclipse.birt.build</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>birt-runtime-osgi</artifactId>
-			<version>${project.version}</version>
-			<type>eclipse-repository</type>
-		</dependency>
 
 		<!-- addons: eclipse datatools -->
-<!--		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+		<dependency>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.hsqldb.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.hsqldb</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.db2.iseries.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.db2.iseries</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.db2.luw</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.db2.zseries.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.db2.zseries</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.db2</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.informix.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm.informix</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.ibm</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.msft.sqlserver</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.mysql.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.mysql</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.oda.ws</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.oda</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.oracle.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.oracle</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.postgresql.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.postgresql</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.sap.maxdb.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.enablement.sap.maxdb</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.modelbase.dbdefinition</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.modelbase.derby</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.modelbase.sql.query</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.modelbase.sql</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.sqltools.data.core</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.sqltools.parsers.sql.lexer</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.sqltools.parsers.sql.query</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.sqltools.parsers.sql</artifactId>
+		    <version>1.1.0.201603142002</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.datatools</groupId>
+			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.datatools.sqltools.result</artifactId>
-		</dependency>-->
+		    <version>1.1.0.201603142002</version>
+		</dependency>
 
 		<!-- lib -->
 		<dependency>
