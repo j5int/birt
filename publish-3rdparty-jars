@@ -1,0 +1,125 @@
+#!/bin/bash
+
+REPO=nexus-snapshots
+URL=https://nexus.brietree.j5int.com/repository/maven-snapshots
+
+ACTIVATION_JARS=(
+	'javax.activation_1.1.0'
+)
+
+ANNOTATION_JARS=(
+	'javax.annotation_1.3.5'
+)
+
+RPC_JARS=(
+	'javax.xml.rpc_1.1.2'
+)
+
+XERCES_JARS=(
+	'org.apache.xerces_2.12.1'
+)
+
+DATATOOLS_JARS=(
+	'org.eclipse.datatools.connectivity_1.14.102'
+	'org.eclipse.datatools.connectivity.apache.derby_1.2.101'
+	'org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.2.101'
+	'org.eclipse.datatools.connectivity.console.profile_1.2.101'
+	'org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_1.2.101'
+	'org.eclipse.datatools.connectivity.db.generic_1.2.101'
+	'org.eclipse.datatools.connectivity.oda_3.6.101'
+	'org.eclipse.datatools.connectivity.oda.consumer_3.4.101'
+	'org.eclipse.datatools.connectivity.oda.design_3.5.101'
+	'org.eclipse.datatools.connectivity.oda.flatfile_3.3.101'
+	'org.eclipse.datatools.connectivity.oda.profile_3.4.101'
+	'org.eclipse.datatools.connectivity.sqm.core_1.4.101'
+	'org.eclipse.datatools.enablement.hsqldb_1.2.101'
+	'org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.db2.iseries.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.db2.iseries_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.db2.luw_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.db2.zseries.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.db2.zseries_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.db2_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.ibm.informix_1.2.101'
+	'org.eclipse.datatools.enablement.ibm_1.2.101'
+	'org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.msft.sqlserver_1.2.101'
+	'org.eclipse.datatools.enablement.mysql.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.mysql_1.2.101'
+	'org.eclipse.datatools.enablement.oda.ws_1.4.101'
+	'org.eclipse.datatools.enablement.oda.xml_1.4.102'
+	'org.eclipse.datatools.enablement.oracle.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.oracle_1.2.101'
+	'org.eclipse.datatools.enablement.postgresql.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.postgresql_1.3.101'
+	'org.eclipse.datatools.enablement.sap.maxdb.dbdefinition_1.2.101'
+	'org.eclipse.datatools.enablement.sap.maxdb_1.2.101'
+	'org.eclipse.datatools.modelbase.dbdefinition_1.2.101'
+	'org.eclipse.datatools.modelbase.derby_1.2.101'
+	'org.eclipse.datatools.modelbase.sql_1.2.101'
+	'org.eclipse.datatools.modelbase.sql.query_1.3.201'
+	'org.eclipse.datatools.sqltools.data.core_1.4.101'
+	'org.eclipse.datatools.sqltools.parsers.sql.lexer_1.2.101'
+	'org.eclipse.datatools.sqltools.parsers.sql.query_1.4.101'
+	'org.eclipse.datatools.sqltools.parsers.sql_1.2.101'
+	'org.eclipse.datatools.sqltools.result_1.3.201'
+)
+
+TZ_JARS=(
+	'org.tukaani.xz_1.9.0'
+)
+
+function deploy_jar() {
+  ARTIFACT=$(echo $2 | cut -d '_' -f 1)
+  VERSION=$(echo $2 | cut -d '_' -f 2)
+  mvn deploy:deploy-file -DgroupId=$1 -DartifactId=$ARTIFACT -Dversion=$VERSION-SNAPSHOT -Dpackaging=jar -Dfile=$3 -DrepositoryId=$REPO -Durl=$URL -Dmaven.wagon.http.ssl.insecure=true  -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true -DskipTests
+}
+
+function deploy_jar_from_lib() {
+  JAR=$(ls build/birt-packages/birt-runtime-osgi/target/package/ReportEngine/lib/$2*.jar | head -n 1)
+  deploy_jar $1 $2 $JAR
+}
+
+function deploy_jar_from_plugin() {
+  JAR=$(ls build/birt-packages/birt-runtime-osgi/target/package/ReportEngine/platform/plugins/$2*.jar | head -n 1)
+  deploy_jar $1 $2 $JAR
+}
+
+for i in ${ACTIVATION_JARS[@]}
+do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  VERSION=$(echo $i | cut -d '_' -f 2)
+  deploy_jar_from_plugin javax.activation $i
+done
+for i in ${ANNOTATION_JARS[@]}
+do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  VERSION=$(echo $i | cut -d '_' -f 2)
+  deploy_jar_from_lib javax.annotation $i
+done
+for i in ${RPC_JARS[@]}
+do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  VERSION=$(echo $i | cut -d '_' -f 2)
+  deploy_jar_from_lib javax.xml.rpc $i
+done
+for i in ${XERCES_JARS[@]}
+do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  VERSION=$(echo $i | cut -d '_' -f 2)
+  deploy_jar_from_plugin org.apache.xerces $i
+done
+for i in ${DATATOOLS_JARS[@]}
+do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  VERSION=$(echo $i | cut -d '_' -f 2)
+  deploy_jar_from_plugin org.eclipse.datatools $i
+done
+for i in ${TZ_JARS[@]}
+do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  VERSION=$(echo $i | cut -d '_' -f 2)
+  deploy_jar_from_plugin org.tukaani.xz $i
+done
