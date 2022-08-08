@@ -728,14 +728,14 @@
 		    <version>4.8.0</version>
 		</dependency>
 
-		<!--UNPUBLISHED-->
+		<!-- JARs which should be packaged with us-->
 		<!-- 
 		javax.activation_1.1.0.v201211130549.jar
 		javax.annotation_1.3.5.v20200909-1856.jar
 		javax.xml.rpc_1.1.2.v202205021836.jar
 		org.apache.xerces_2.12.1.v20210115-0812.jar
 		org.eclipse.birt.axis.overlay_4.9.0.jar
-		org.eclipse.birt.runtime_4.9.0-20220502.jar
+		*org.eclipse.birt.runtime_4.9.0-20220502.jar
 		org.eclipse.datatools.connectivity_1.14.102.201911250848.jar
 		org.eclipse.datatools.connectivity.apache.derby_1.2.101.201811012051.jar
 		org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.2.101.201811012051.jar
@@ -783,30 +783,31 @@
 		org.eclipse.datatools.sqltools.result_1.3.201.201905112017.jar
 		org.tukaani.xz_1.9.0.v20210624-1259.jar
 		-->
+
 	</dependencies>
 	<build>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-shade-plugin</artifactId>
-					<version>3.3.0</version>
-					<executions>
-						<execution>
-							<phase>package</phase>
-							<goals>
-								<goal>shade</goal>
-							</goals>
-							<configuration>
-								<artifactSet>
-									<includes>
-										<include>org.eclipse.datatools:*</include>
-										<include>org.eclipse.platform:*</include>
-									</includes>
-								</artifactSet>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.3.0</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<artifactSet>
+								<includes>
+									<include>org.eclipse.datatools:*</include>
+									<include>org.eclipse.platform:*</include>
+								</includes>
+							</artifactSet>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 </project>
