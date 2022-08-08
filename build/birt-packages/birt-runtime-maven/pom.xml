@@ -110,236 +110,6 @@
 		    <artifactId>org.eclipse.orbit.mongodb_3.2.2.v20170222-2110</artifactId>
 		    <version>4.8.0</version>
 		</dependency>
-
-
-		<!--POSSIBLES-->
-		<!--javax.xml.bind_2.2.0.v201105210648.jar-->
-		<dependency>
-		    <groupId>javax.xml.bind</groupId>
-  		    <artifactId>jaxb-api</artifactId>
-		    <version>2.2.12</version>
-		</dependency>
-
-		<!--UNPUBLISHED-->
-		<!-- 
-		javax.annotation_1.3.5.v20200909-1856.jar
-		javax.xml.rpc_1.1.2.v202205021836.jar
-		org.apache.xerces_2.12.1.v20210115-0812.jar
-		org.eclipse.birt.axis.overlay_4.9.0.jar
-		org.eclipse.birt.runtime_4.9.0-20220502.jar
-		org.eclipse.datatools.connectivity.apache.derby_1.2.101.201811012051.jar
-		org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.2.101.201811012051.jar
-		org.eclipse.datatools.connectivity.console.profile_1.2.101.201811012051.jar
-		org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_1.2.101.201811012051.jar
-		org.eclipse.datatools.connectivity.db.generic_1.2.101.201811012051.jar
-		org.eclipse.datatools.connectivity.oda_3.6.101.201811012051.jar
-		org.eclipse.datatools.connectivity.oda.consumer_3.4.101.201811012051.jar
-		org.eclipse.datatools.connectivity.oda.design_3.5.101.201811012051.jar
-		org.eclipse.datatools.connectivity.oda.flatfile_3.3.101.201811012051.jar
-		org.eclipse.datatools.connectivity.oda.profile_3.4.101.201811012051.jar
-		org.eclipse.datatools.connectivity.sqm.core_1.4.101.201811012051.jar
-		org.eclipse.datatools.enablement.oda.xml_1.4.102.201901091730.jar
-		org.eclipse.datatools.modelbase.sql.query_1.3.201.201811012051.jar
-		org.tukaani.xz_1.9.0.v20210624-1259.jar
-		-->
-
-		<!--UNPROCESSED-->
-		<!-- addons: eclipse datatools -->
-		<!--org.eclipse.datatools.connectivity_1.14.102.201911250848.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.datatools.connectivity</artifactId>
-		    <version>1.13.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.hsqldb_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.hsqldb</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.hsqldb.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.db2.iseries.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.db2.iseries.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.db2.iseries_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.db2.iseries</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.db2.luw_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.db2.luw</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.db2.zseries.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.db2.zseries.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.db2.zseries_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.db2.zseries</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.db2_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.db2</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.informix.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm.informix_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm.informix</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.ibm_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.ibm</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.msft.sqlserver_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.msft.sqlserver</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.mysql.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.mysql.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.mysql_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.mysql</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.oda.ws_1.4.101.201811012051.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.datatools.enablement.oda.ws</artifactId>
-		    <version>1.3.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.oracle.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.oracle.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.oracle_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.oracle</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.postgresql.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.datatools.enablement.postgresql.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.postgresql_1.3.101.201811012051.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.datatools.enablement.postgresql</artifactId>
-		    <version>1.2.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.sap.maxdb.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.sap.maxdb.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.enablement.sap.maxdb_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.enablement.sap.maxdb</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.modelbase.dbdefinition_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.modelbase.dbdefinition</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.modelbase.derby_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.modelbase.derby</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.modelbase.sql_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.modelbase.sql</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.sqltools.data.core_1.4.101.201811012051.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.datatools.sqltools.data.core</artifactId>
-		    <version>1.3.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.sqltools.parsers.sql.lexer_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.sqltools.parsers.sql.lexer</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.sqltools.parsers.sql.query_1.4.101.201811012051.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.datatools.sqltools.parsers.sql.query</artifactId>
-		    <version>1.3.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.sqltools.parsers.sql_1.2.101.201811012051.jar-->
-		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.sqltools.parsers.sql</artifactId>
-		    <version>1.1.0.201603142002</version>
-		</dependency>
-		<!--org.eclipse.datatools.sqltools.result_1.3.201.201905112017.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.datatools.sqltools.result</artifactId>
-		    <version>1.2.0.201603142002</version>
-		</dependency>
-
-
-		<!-- lib -->
 		<!--com.github.librepdf.openpdf_1.3.26.jar-->
 		<dependency>
 			<groupId>com.github.librepdf</groupId>
@@ -352,44 +122,24 @@
 			<artifactId>icu4j</artifactId>
 			<version>67.1</version>
 		</dependency>
-		<!-- flute -->
 		<!--flute.jar-->
 		<dependency>
 			<groupId>milyn</groupId>
 			<artifactId>flute</artifactId>
 			<version>1.3</version>
 		</dependency>
-		<!-- jakarta.annotation-api -->
 		<!--jakarta.annotation-api_1.3.5.jar-->
 		<dependency>
 			<groupId>jakarta.annotation</groupId>
 			<artifactId>jakarta.annotation-api</artifactId>
 			<version>2.1.1</version>
 		</dependency>
-		<!-- javax.activation -->
-		<!--javax.activation_1.1.0.v201211130549.jar-->
-		<dependency>
-			<groupId>org.eclipse.jetty.orbit</groupId>
-			<artifactId>javax.activation</artifactId>
-			<version>1.1.0.v201105071233</version>
-		</dependency>
-		<!-- javax.wsdl -->
-		<!--javax.wsdl_1.6.2.v201012040545.jar-->
-		<dependency>
-		    <groupId>org.eclipse.birt.runtime.3_7_1</groupId>
-		    <artifactId>javax.wsdl</artifactId>
-		    <version>1.5.1</version>
-		</dependency>
-
-		<!-- javax.xml.bind -->
-		<!-- javax.xml.stream -->
 		<!--javax.xml.stream_1.0.1.v201004272200.jar-->
 		<dependency>
 			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>javax.xml.stream</artifactId>
 			<version>1.0.1.v201004272200</version>
 		</dependency>
-		<!-- javax.xml -->
 		<!--javax.xml_1.3.4.v201005080400.jar-->
 		<dependency>
 			<groupId>org.eclipse.birt.runtime</groupId>
@@ -521,7 +271,6 @@
 			<artifactId>batik-xml</artifactId>
 			<version>${version.org.apache.batik}</version>
 		</dependency>
-
 		<!--org.apache.commons.codec_1.14.0.v20200818-1422.jar-->
 		<dependency>
 			<groupId>commons-codec</groupId>
@@ -595,7 +344,6 @@
 			<artifactId>lucene-queryparser</artifactId>
 			<version>7.5.0</version>
 		</dependency>
-
 		<!-- org.apache.poi.ooxml -->
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<!--org.apache.poi.ooxml_4.1.1.v20200820-1148.jar-->
@@ -613,7 +361,6 @@
 			<artifactId>poi</artifactId>
 			<version>4.1.1</version>
 		</dependency>
-
 		<!-- org.apache.xalan -->
 		<!-- https://mvnrepository.com/artifact/xalan/xalan -->
 		<!-- https://mvnrepository.com/artifact/xalan/xalan -->
@@ -719,12 +466,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<!--org.eclipse.emf.common_2.25.0.v20220325-0806.jar-->
 		<dependency>
-			<groupId>org.eclipse.emf</groupId>
-			<artifactId>org.eclipse.emf.common</artifactId>
-			<version>2.24.0</version>
+		    <groupId>org.eclipse.emf</groupId>
+		    <artifactId>org.eclipse.emf.common</artifactId>
+		    <version>2.25.0</version>
 		</dependency>
 		<!--org.eclipse.emf.ecore.change_2.14.0.v20190528-0725.jar-->
 		<dependency>
@@ -742,7 +488,7 @@
 		<dependency>
 			<groupId>org.eclipse.emf</groupId>
 			<artifactId>org.eclipse.emf.ecore</artifactId>
-			<version>2.26.0</version>
+			<version>2.27.0</version>
 		</dependency>
 		<!--org.eclipse.equinox.app_1.6.100.v20211021-1418.jar-->
 		<dependency>
@@ -930,20 +676,6 @@
 			<artifactId>org.mozilla.javascript</artifactId>
 			<version>1.7.5.v201504281450</version>
 		</dependency>
-		<!-- org.sat4j.core -->
-		<!--org.sat4j.core_2.3.5.v201308161310.jar-->
-		<dependency>
-		    <groupId>org.sat4j</groupId>
-		    <artifactId>org.sat4j.core</artifactId>
-		    <version>2.3.1</version>
-		</dependency>
-		<!-- org.sat4j.pb -->
-		<!--org.sat4j.pb_2.3.5.v201404071733.jar-->
-		<dependency>
-		    <groupId>org.sat4j</groupId>
-		    <artifactId>org.sat4j.pb</artifactId>
-		    <version>2.3.1</version>
-		</dependency>
 		<!--  org.w3c.css.sac -->
 		<!--org.w3c.css.sac_1.3.1.v200903091627.jar-->
 		<dependency>
@@ -958,13 +690,6 @@
     		<artifactId>org.w3c.dom.events</artifactId>
     		<version>3.0.0.draft20060413_v201105210656</version>
 		</dependency>
-		<!-- org.w3c.dom.smil -->
-		<!--org.w3c.dom.smil_1.0.1.v200903091627.jar-->
-		<dependency>
-    		<groupId>org.eclipse.birt.runtime.3_7_1</groupId>
-		    <artifactId>org.w3c.dom.smil</artifactId>
-		    <version>1.0.0</version>
-		</dependency>
 		<!-- org.w3c.dom.svg -->
 		<!--org.w3c.dom.svg_1.1.0.v201011041433.jar-->
 		<dependency>
@@ -972,12 +697,77 @@
 		    <artifactId>org.w3c.dom.svg</artifactId>
 		    <version>1.1.0</version>
 		</dependency>
-		<!-- probably also needed -->
+
+
+
+
+		<!--POSSIBLES-->
+		<!--javax.xml.bind_2.2.0.v201105210648.jar-->
 		<dependency>
-			<groupId>xml-apis</groupId>
-			<artifactId>xml-apis</artifactId>
-			<version>1.4.01</version>
+		    <groupId>javax.xml.bind</groupId>
+  		    <artifactId>jaxb-api</artifactId>
+		    <version>2.2.12</version>
 		</dependency>
+
+		<!--UNPUBLISHED-->
+		<!-- 
+		javax.activation_1.1.0.v201211130549.jar
+		javax.annotation_1.3.5.v20200909-1856.jar
+		javax.wsdl_1.6.2.v201012040545.jar
+		javax.xml.rpc_1.1.2.v202205021836.jar
+		org.apache.xerces_2.12.1.v20210115-0812.jar
+		org.eclipse.birt.axis.overlay_4.9.0.jar
+		org.eclipse.birt.runtime_4.9.0-20220502.jar
+		org.eclipse.datatools.connectivity_1.14.102.201911250848.jar
+		org.eclipse.datatools.connectivity.apache.derby_1.2.101.201811012051.jar
+		org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.connectivity.console.profile_1.2.101.201811012051.jar
+		org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_1.2.101.201811012051.jar
+		org.eclipse.datatools.connectivity.db.generic_1.2.101.201811012051.jar
+		org.eclipse.datatools.connectivity.oda_3.6.101.201811012051.jar
+		org.eclipse.datatools.connectivity.oda.consumer_3.4.101.201811012051.jar
+		org.eclipse.datatools.connectivity.oda.design_3.5.101.201811012051.jar
+		org.eclipse.datatools.connectivity.oda.flatfile_3.3.101.201811012051.jar
+		org.eclipse.datatools.connectivity.oda.profile_3.4.101.201811012051.jar
+		org.eclipse.datatools.connectivity.sqm.core_1.4.101.201811012051.jar
+		org.eclipse.datatools.enablement.hsqldb_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.db2.iseries.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.db2.iseries_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.db2.luw_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.db2.zseries.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.db2.zseries_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.db2_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm.informix_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.ibm_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.msft.sqlserver_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.mysql.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.mysql_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.oda.ws_1.4.101.201811012051.jar
+		org.eclipse.datatools.enablement.oda.xml_1.4.102.201901091730.jar
+		org.eclipse.datatools.enablement.oracle.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.oracle_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.postgresql.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.postgresql_1.3.101.201811012051.jar
+		org.eclipse.datatools.enablement.sap.maxdb.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.enablement.sap.maxdb_1.2.101.201811012051.jar
+		org.eclipse.datatools.modelbase.dbdefinition_1.2.101.201811012051.jar
+		org.eclipse.datatools.modelbase.derby_1.2.101.201811012051.jar
+		org.eclipse.datatools.modelbase.sql_1.2.101.201811012051.jar
+		org.eclipse.datatools.modelbase.sql.query_1.3.201.201811012051.jar
+		org.eclipse.datatools.sqltools.data.core_1.4.101.201811012051.jar
+		org.eclipse.datatools.sqltools.parsers.sql.lexer_1.2.101.201811012051.jar
+		org.eclipse.datatools.sqltools.parsers.sql.query_1.4.101.201811012051.jar
+		org.eclipse.datatools.sqltools.parsers.sql_1.2.101.201811012051.jar
+		org.eclipse.datatools.sqltools.result_1.3.201.201905112017.jar
+		org.sat4j.core_2.3.5.v201308161310.jar
+		org.sat4j.pb_2.3.5.v201404071733.jar
+		org.tukaani.xz_1.9.0.v20210624-1259.jar
+		org.w3c.dom.smil_1.0.1.v200903091627.jar
+		-->
 	</dependencies>
 	<build>
 			<plugins>
