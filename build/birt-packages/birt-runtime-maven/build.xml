@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--
+ *******************************************************************************
+ * Copyright (c) 2021 Contributors to the Eclipse Foundation
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0/.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+ * 
+ * Contributors:
+ *   See git history
+ *******************************************************************************
+-->
+<project basedir=".">
+  <property name="BIRT_VERSION" value="4.9.0"/>
+  <property name="RUNTIME_DIR" location="../birt-runtime-osgi/target/package"/>
+  <property name="ROOT_DIR" location="../../.."/>
+  <property name="TARGET_DIR" location="./target"/>
+  <property name="STAGE_DIR" location="./target/package"/>
+  <target name="package" depends="build-report-engine">
+    <zip destfile="${TARGET_DIR}/birt-runtime-${BIRT_VERSION}.zip">
+      <fileset dir="${STAGE_DIR}"/>
+    </zip>
+  </target>
+  <target name="clean">
+    <delete dir="${TARGET_DIR}"/>
+  </target>
+  <target name="build-report-engine">
+    <!-- copy necessary jars to lib folder -->
+    <copy todir="${STAGE_DIR}">
+      <fileset dir="${RUNTIME_DIR}/ReportEngine/platform/plugins">
+        <include name="javax.activation*.jar"/>
+        <include name="org.apache.xerces*.jar"/>
+        <include name="org.eclipse.datatools.*.jar"/>
+        <include name="org.tukaani.xz*.jar"/>
+      </fileset>
+      <flattenmapper/>
+    </copy>
+    <!-- copy all jars from BIRT-RUNTIME here -->
+    <copy todir="${STAGE_DIR}">
+      <fileset dir="${RUNTIME_DIR}">
+        <include name="javax.annotation*.jar"/>
+        <include name="javax.xml.rpc*.jar"/>
+        <include name="org.eclipse.birt.axis*.jar"/>
+      </fileset>
+    </copy>
+    <!-- build org.eclipse.birt.runtime -->
+    <antcall target="create-birt-runtime"/>
+  </target>
+  <target name="create-birt-runtime">
+    <path id="lib.path">
+      <fileset dir="${ROOT_DIR}/build/org.eclipse.birt.build">
+        <include name="lib/*.jar"/>
+        <include name="target/*.jar"/>
+      </fileset>
+    </path>
+    <taskdef name="buildJar" classname="org.eclipse.birt.build.ant.PackTask" classpathref="lib.path"/>
+    <!-- copy all birt plugins to temp folder-->
+    <copy todir="${TARGET_DIR}/org.eclipse.birt.runtime">
+      <fileset dir="${STAGE_DIR}">
+        <include name="*.jar"/>
+      </fileset>
+    </copy>
+    <!-- create org.eclipse.birt.runtime.jar -->
+    <buildJar basedir="${TARGET_DIR}/org.eclipse.birt.runtime"
+              output="${STAGE_DIR}/tmp.birt.runtime.jar">
+      <manifest>
+        <attribute name="Bundle-Version" value="${BIRT_VERSION}"/>
+        <attribute name="Bundle-Name" value="BIRT Runtime SDK"/>
+        <attribute name="Bundle-SymbolicName" value="org.eclipse.birt.runtime"/>
+        <attribute name="Bundle-Vendor" value="Eclipse.org"/>
+        <attribute name="Manifest-Version" value="1.0"/>
+      </manifest>
+    </buildJar>
+    <!-- it's surprisingly hard to keep eclipse-jarsigner-plugin off jars -->
+    <zip destfile="${STAGE_DIR}/org.eclipse.birt.runtime.maven_${BIRT_VERSION}.jar">
+        <zipfileset src="${STAGE_DIR}/tmp.birt.runtime.jar"
+                    excludes="META-INF/ECLIPSE_.*"/>
+    </zip>
+    <delete file="${STAGE_DIR}/tmp.birt.runtime.jar"/>
+  </target>
+</project>
