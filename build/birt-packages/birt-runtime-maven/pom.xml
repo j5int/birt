@@ -693,27 +693,45 @@
 		<!-- org.w3c.dom.svg -->
 		<!--org.w3c.dom.svg_1.1.0.v201011041433.jar-->
 		<dependency>
-		    <groupId>org.eclipse.birt.runtime.3_7_1</groupId>
-		    <artifactId>org.w3c.dom.svg</artifactId>
-		    <version>1.1.0</version>
+		    <groupId>com.innoventsolutions.birt.runtime</groupId>
+		    <artifactId>org.w3c.dom.svg_1.1.0.v201011041433</artifactId>
+		    <version>4.8.0</version>
 		</dependency>
-
-
-
-
-		<!--POSSIBLES-->
+		<!--javax.wsdl_1.6.2.v201012040545.jar-->
+		<dependency>
+		    <groupId>javax</groupId>
+		    <artifactId>wsdl</artifactId>
+		    <version>1.6.2</version>
+		</dependency>
 		<!--javax.xml.bind_2.2.0.v201105210648.jar-->
 		<dependency>
-		    <groupId>javax.xml.bind</groupId>
-  		    <artifactId>jaxb-api</artifactId>
-		    <version>2.2.12</version>
+		    <groupId>javax.xml</groupId>
+		    <artifactId>bind</artifactId>
+		    <version>2.2.0-v201105210648</version>
+		</dependency>
+		<!--org.sat4j.core_2.3.5.v201308161310.jar-->
+		<dependency>
+		    <groupId>com.innoventsolutions.birt.runtime</groupId>
+		    <artifactId>org.sat4j.core_2.3.5.v201308161310</artifactId>
+		    <version>4.8.0</version>
+		</dependency>
+		<!--org.sat4j.pb_2.3.5.v201404071733.jar-->
+		<dependency>
+		    <groupId>com.innoventsolutions.birt.runtime</groupId>
+		    <artifactId>org.sat4j.pb_2.3.5.v201404071733</artifactId>
+		    <version>4.8.0</version>
+		</dependency>
+		<!--org.w3c.dom.smil_1.0.1.v200903091627.jar-->
+		<dependency>
+		    <groupId>com.innoventsolutions.birt.runtime</groupId>
+		    <artifactId>org.w3c.dom.smil_1.0.1.v200903091627</artifactId>
+		    <version>4.8.0</version>
 		</dependency>
 
 		<!--UNPUBLISHED-->
 		<!-- 
 		javax.activation_1.1.0.v201211130549.jar
 		javax.annotation_1.3.5.v20200909-1856.jar
-		javax.wsdl_1.6.2.v201012040545.jar
 		javax.xml.rpc_1.1.2.v202205021836.jar
 		org.apache.xerces_2.12.1.v20210115-0812.jar
 		org.eclipse.birt.axis.overlay_4.9.0.jar
@@ -763,10 +781,7 @@
 		org.eclipse.datatools.sqltools.parsers.sql.query_1.4.101.201811012051.jar
 		org.eclipse.datatools.sqltools.parsers.sql_1.2.101.201811012051.jar
 		org.eclipse.datatools.sqltools.result_1.3.201.201905112017.jar
-		org.sat4j.core_2.3.5.v201308161310.jar
-		org.sat4j.pb_2.3.5.v201404071733.jar
 		org.tukaani.xz_1.9.0.v20210624-1259.jar
-		org.w3c.dom.smil_1.0.1.v200903091627.jar
 		-->
 	</dependencies>
 	<build>
