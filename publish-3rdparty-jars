@@ -15,6 +15,10 @@ RPC_JARS=(
 	'javax.xml.rpc_1.1.2'
 )
 
+BIND_JARS=(
+	'javax.xml.bind_2.2.0'
+)
+
 WSDL_JARS=(
 	'javax.wsdl_1.6.2'
 )
@@ -108,6 +112,12 @@ do
   ARTIFACT=$(echo $i | cut -d '_' -f 1)
   VERSION=$(echo $i | cut -d '_' -f 2)
   deploy_jar_from_lib javax.xml.rpc $i
+done
+for i in ${BIND_JARS[@]}
+do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  VERSION=$(echo $i | cut -d '_' -f 2)
+  deploy_jar_from_lib javax.xml.bind $i
 done
 for i in ${WSDL_JARS[@]}
 do
