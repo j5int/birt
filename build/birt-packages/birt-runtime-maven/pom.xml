@@ -58,13 +58,13 @@
 		</dependency>
 		<!--javax.inject_1.0.0.v20091030.jar-->
 		<dependency>
-		    <groupId>at.bestsolution.efxclipse.eclipse</groupId>
+		    <groupId>javax.inject</groupId>
 		    <artifactId>javax.inject</artifactId>
-		    <version>1.0.0</version>
+		    <version>1</version>
 		</dependency>
 		<!--javax.servlet.jsp_2.2.0.v201112011158.jar-->
 		<dependency>
-		    <groupId>org.eclipse.equinox</groupId>
+		    <groupId>org.eclipse.jetty.orbit</groupId>
 		    <artifactId>javax.servlet.jsp</artifactId>
 		    <version>2.2.0.v201112011158</version>
 		</dependency>
@@ -88,15 +88,15 @@
 		</dependency>
 		<!--org.apache.xml.resolver_1.2.0.v201005080400.jar-->
 		<dependency>
-		    <groupId>org.kermeta.eclipse</groupId>
-		    <artifactId>org.apache.xml.resolver</artifactId>
-		    <version>1.2.0.v201005080400</version>
+		    <groupId>com.innoventsolutions.birt.runtime</groupId>
+		    <artifactId>org.apache.xml.resolver_1.2.0.v201005080400</artifactId>
+		    <version>4.8.0</version>
 		</dependency>
 		<!--org.apache.xml.serializer_2.7.1.v201005080400.jar-->
 		<dependency>
-		    <groupId>org.kermeta.eclipse</groupId>
-		    <artifactId>org.apache.xml.serializer</artifactId>
-		    <version>2.7.1.v201005080400</version>
+		    <groupId>com.innoventsolutions.birt.runtime</groupId>
+		    <artifactId>org.apache.xml.serializer_2.7.1.v201005080400</artifactId>
+		    <version>4.8.0</version>
 		</dependency>
 		<!--org.eclipse.jetty.servlet-api_4.0.6.jar-->
 		<dependency>
@@ -699,9 +699,9 @@
 		</dependency>
 		<!--javax.wsdl_1.6.2.v201012040545.jar-->
 		<dependency>
-		    <groupId>javax</groupId>
-		    <artifactId>wsdl</artifactId>
-		    <version>1.6.2</version>
+		  <groupId>javax.wsdl</groupId>
+		  <artifactId>javax.wsdl</artifactId>
+		  <version>1.6.2-20220810.063048-1</version>
 		</dependency>
 		<!--javax.xml.bind_2.2.0.v201105210648.jar-->
 		<dependency>
