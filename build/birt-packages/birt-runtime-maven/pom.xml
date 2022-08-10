@@ -697,12 +697,6 @@
 		    <artifactId>org.w3c.dom.svg_1.1.0.v201011041433</artifactId>
 		    <version>4.8.0</version>
 		</dependency>
-		<!--javax.xml.bind_2.2.0.v201105210648.jar-->
-		<dependency>
-		    <groupId>javax.xml</groupId>
-		    <artifactId>bind</artifactId>
-		    <version>2.2.0-v201105210648</version>
-		</dependency>
 		<!--org.sat4j.core_2.3.5.v201308161310.jar-->
 		<dependency>
 		    <groupId>com.innoventsolutions.birt.runtime</groupId>
@@ -742,6 +736,12 @@
 		  <groupId>javax.wsdl</groupId>
 		  <artifactId>javax.wsdl</artifactId>
 		  <version>1.6.2-20220810.063048-1</version>
+		</dependency>
+		<!--javax.xml.bind_2.2.0.v201105210648.jar-->
+		<dependency>
+		  <groupId>javax.xml.bind</groupId>
+		  <artifactId>javax.xml.bind</artifactId>
+		  <version>2.2.0-20220810.064509-1</version>
 		</dependency>
 		<!--javax.xml.rpc_1.1.2.v202205021836.jar-->
 		<dependency>
