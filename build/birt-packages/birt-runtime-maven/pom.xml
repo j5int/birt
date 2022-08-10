@@ -36,6 +36,12 @@
 			<artifactId>org.eclipse.birt.build</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.birt</groupId>
+			<artifactId>org.eclipse.birt.api</artifactId>
+			<version>${project.version}</version>
+			<type>pom</type>
+		</dependency>
 
 		<!--VERIFIED-->
 		<!--commons-cli-1.0.jar-->
@@ -1054,6 +1060,7 @@
 									<include>org.apache.xerces:*</include>
 									<include>org.eclipse.datatools:*</include>
 									<include>org.eclipse.platform:*</include>
+									<include>org.eclipse.birt:*</include>
 									<include>org.tukaani.xz:*</include>
 								</includes>
 							</artifactSet>
