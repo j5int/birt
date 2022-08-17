@@ -677,11 +677,15 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!--org.mozilla.javascript_1.7.5.v201504281450.jar-->
 		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.mozilla.javascript</artifactId>
-			<version>1.7.5.v201504281450</version>
+		  <groupId>org.eclipse.birt.runtime</groupId>
+		  <artifactId>axis</artifactId>
+		  <version>4.9.0-20220817.075352-1</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.eclipse.birt.runtime</groupId>
+		  <artifactId>js</artifactId>
+		  <version>4.9.0-20220817.075749-1</version>
 		</dependency>
 		<!--  org.w3c.css.sac -->
 		<!--org.w3c.css.sac_1.3.1.v200903091627.jar-->
