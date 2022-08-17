@@ -76,8 +76,8 @@ DATATOOLS_JARS=(
 )
 
 EXTRA_LIB=(
-	'axis.jar'
-	'js.jar'
+	'axis_4.9.0'
+	'js_4.9.0'
 )
 
 TZ_JARS=(
@@ -134,5 +134,7 @@ do
 done
 for i in ${EXTRA_LIB[@]}
 do
+  ARTIFACT=$(echo $i | cut -d '_' -f 1)
+  cp build/birt-packages/birt-runtime-osgi/target/package/ReportEngine/lib/{$ARTIFACT.jar,$i.jar}
   deploy_jar_from_lib org.eclipse.birt.runtime $i
 done
